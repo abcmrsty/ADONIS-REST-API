@@ -1,5 +1,7 @@
 'use strict'
 
+const { route } = require('@adonisjs/framework/src/Route/Manager')
+
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -17,5 +19,9 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+  return { greeting: 'Hello world in AcademiaCoder' }
+})
+
+Route.post('usuarios/registro', () =>{
+  return {mensaje: 'Hola AcademiaCoder Registraste un usuario!'}
 })
